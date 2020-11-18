@@ -1,0 +1,8 @@
+--- 
+#this is the server-control demo
+- name: Update yum and install some necessary toolkits to the server from yum or pip
+  hosts: all
+  remote_user: root
+  roles:
+    - Basic_Tools_Setup
+    - Install_PodmanAsDocker

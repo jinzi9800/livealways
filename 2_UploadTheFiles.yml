@@ -1,0 +1,7 @@
+--- 
+# upload some very important files, such as configrations,  operations log, and Development files.
+- name: upload the files for CONF Ops Dev
+  hosts: all
+  remote_user: root
+  roles:
+    - uploader

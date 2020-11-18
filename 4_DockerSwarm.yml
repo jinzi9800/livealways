@@ -1,0 +1,8 @@
+--- 
+# This script is a deployment to init Docker Swarm
+- name: get a leader 
+  hosts: all
+  remote_user: root
+  roles:
+    - Docker_Swarm_Leader_Init
+    - Docker_Swarm_Slaves_Init
